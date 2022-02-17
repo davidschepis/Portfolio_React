@@ -32,13 +32,22 @@ function Navigation(props) {
                                 }>About Me</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" onClick={() => props.navigate("projects")}>Projects</a>
+                            <a className="nav-link" onClick={() => props.navigate("projects")}  
+                            id={props.page === "projects" ?
+                                    "selectedNav" : ""
+                                }>Projects</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" onClick={() => props.navigate("resume")}>Resume</a>
+                            <a className="nav-link" onClick={() => props.navigate("resume")}
+                             id={props.page === "resume" ?
+                             "selectedNav" : ""
+                         }>Resume</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" onClick={() => props.navigate("contactMe")}>Contact Me</a>
+                            <a className="nav-link" onClick={() => props.navigate("contactMe")}
+                             id={props.page === "contactMe" ?
+                             "selectedNav" : ""
+                         }>Contact Me</a>
                         </li>
                     </ul>
                 </div>
