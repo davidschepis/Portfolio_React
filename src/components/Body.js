@@ -1,12 +1,36 @@
 import React, { useState } from 'react';
 import Project from "./Project";
+import { Modal } from "react-bootstrap";
+
 
 function Body(props) {
+
+    const[title, setTitle] = useState("");
+    const[body, setBody] = useState("");
+    const[image, setImage] = useState("");
+    const[URL1, setURL1] = useState("");
+    const[URL2, setURL2] = useState("");
+
+    const [showModal, setModal] = useState(false);
+
+    const closeProjectModal = () => {
+        setModal(false)
+    };
+
+    const showProjectModal = (data) => {
+        setTitle(data.title);
+        setBody(data.body);
+        setImage(data.image);
+        setModal(true);
+        setURL1(data.githubURL);
+        setURL2(data.liveURL);
+    };
+
     if (props.page === 'aboutMe') {
         return (
             <section className="mainSection container">
                 <div className="row">
-                    <div className="col my-auto">
+                    <div className="col my-auto text-center">
                         <h1 className="sectionTitle ">About Me</h1>
                     </div>
                     <div className="col">
@@ -35,21 +59,66 @@ function Body(props) {
     }
     else if (props.page === 'projects') {
         return (
-            <section className="mainSection">
-                <h1 className="sectionTitle">Projects</h1>
+            <section className="mainSection container">
+                <div className="row">
+                    <div className="col text-center">
+                        <h1 className="sectionTitle">Projects</h1>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col">
+                        <Project project={1} showProjectModal={showProjectModal}/>
+                    </div>
+                    <div className="col">
+                        <Project project={2} showProjectModal={showProjectModal}/>
+                    </div>
+                    <div className="col">
+                        <Project project={3} showProjectModal={showProjectModal}/>
+                    </div>
+                    <div className="col">
+                        <Project project={4} showProjectModal={showProjectModal}/>
+                    </div>
+                    <div className="col">
+                        <Project project={5} showProjectModal={showProjectModal}/>
+                    </div>
+                    <div className="col">
+                        <Project project={6} showProjectModal={showProjectModal}/>
+                    </div>
+                </div>
+
+                {/* <div className="modal" tabindex="-1" role="dialog" id="projectModal"> */}
+                <Modal size="xl" show={showModal} className="modal" tabIndex="-1" role="dialog" id="projectModal">
+                    <div className="modal-dialog modal-xl" role="document">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <h5 className="modal-title" id="modalTitle">{title}</h5>
+                                <button type="button" className="close" aria-label="Close" onClick={() => closeProjectModal()}>
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div className="modal-body text-center" id="modalBody">
+                            <img src={image} alt="Project Example"/>
+                            {body}
+                            <button type="button" className="btn m-1" onClick={() => window.open(URL1)}>Github</button>
+                            <button type="button" className="btn m-1" onClick={() => window.open(URL2)}>Live Page</button>
+                            </div>
+                        </div>
+                    </div>
+                {/* </div> */}
+                </Modal>
             </section>
         )
     }
     else if (props.page === 'resume') {
         return (
-            <section className="mainSection">
+            <section className="mainSection container">
                 <h1 className="sectionTitle">Resume</h1>
             </section>
         )
     }
     else if (props.page === 'contactMe') {
         return (
-            <section className="mainSection">
+            <section className="mainSection container">
                 <h1 className="sectionTitle">Contact Me</h1>
             </section>
         )

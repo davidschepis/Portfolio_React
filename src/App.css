@@ -74,15 +74,10 @@ body{
   float:none;
 }
 
-/* .projectImage {
-  height: 200px;
-  width: 400px;
-} */
-
-/* .card:hover {
+.card:hover {
   opacity: .5;
   cursor: pointer;
-} */
+}
 
 .navbar a {
   font-size: 60px;
@@ -114,9 +109,10 @@ body{
 } */
 
 .mainSection {
-  padding-top: 50px;
+  margin-top: 100px;
   color: var(--c1);
   /* min-height: 700px; */
+  border: solid var(--c1) 5px;
 }
 
 .bio {
@@ -137,7 +133,7 @@ body{
 
 /* #modalTitle, #modalBody {
   color: white;
-}
+} */
 
 .card {
   background-color: #334E58;
@@ -147,21 +143,11 @@ body{
 
 .card:hover {
   transform: scale(1.03);
-} */
+}
 
-/* #header p {
-  color: var(--c5);
-  font-size: 60px
-} */
-
-/* .sectionHeader {
+.sectionTitle {
   font-size: 60px;
-} */
-
-/* .fileLogo {
-  height: 60px;
-  width: 60px;
-} */
+}
 
 .footerLogo:hover {
   transform: scale(1.25);
@@ -187,4 +173,14 @@ body{
 
 #selectedNav {
   color: white !important;
+}
+
+.cardImage {
+  height: 200px;
+  width: 24rem;
+}
+
+#modalBody img {
+  width: 100%;
+  height: auto;
 }
