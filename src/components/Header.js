@@ -5,7 +5,9 @@ function Header(props) {
 
     return (
         <section>
-            <Navigation/>
+            <section id="header">
+                <Navigation navigate={props.navigate}/>
+            </section>
         </section>
     );
 }

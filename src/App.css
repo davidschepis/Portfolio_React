@@ -74,15 +74,15 @@ body{
   float:none;
 }
 
-.projectImage {
+/* .projectImage {
   height: 200px;
   width: 400px;
-}
+} */
 
-.card:hover {
+/* .card:hover {
   opacity: .5;
   cursor: pointer;
-}
+} */
 
 .navbar a {
   font-size: 60px;
@@ -92,29 +92,31 @@ body{
 #header a:hover {
   color: rgba(255, 255, 255, 1) !important;
   box-shadow: 0 5px 15px var(--c2);
+  cursor: pointer;
 }
 
 #header a:hover p{
   color: rgba(255, 255, 255, 1) !important;
 }
 
-#contactMe a:hover {
+/* #contactMe a:hover {
   color: rgba(255, 255, 255, 1);
   box-shadow: 0 5px 15px var(--c2);
-}
+} */
 
 .navbar li {
   border-right: solid var(--c3) 1px;
 }
 
-#resume a {
+/* #resume a {
   text-decoration: none;
   color: inherit;
-}
+} */
 
 .mainSection {
+  padding-top: 50px;
   color: var(--c1);
-  min-height: 500px;
+  /* min-height: 700px; */
 }
 
 .bio {
@@ -122,18 +124,18 @@ body{
   font-size: 23px;
 }
 
-#contactSection a {
+/* #contactSection a {
   text-decoration: none;
   color: inherit;
   font-size: 25px;
   font-weight: bold;
-}
+} */
 
-.modal-content {
+/* .modal-content {
   background-color: var(--c2);
-}
+} */
 
-#modalTitle, #modalBody {
+/* #modalTitle, #modalBody {
   color: white;
 }
 
@@ -145,35 +147,44 @@ body{
 
 .card:hover {
   transform: scale(1.03);
-}
+} */
 
-#portfolio {
-  height: 60px;
-  width: 60px;
-}
-
-#header p {
+/* #header p {
   color: var(--c5);
   font-size: 60px
-}
+} */
 
-.sectionHeader {
+/* .sectionHeader {
   font-size: 60px;
-}
+} */
 
-.fileLogo {
+/* .fileLogo {
   height: 60px;
   width: 60px;
-}
+} */
 
-.fileLogo:hover {
+.footerLogo:hover {
   transform: scale(1.25);
 }
 
-.logo {
+#logoText {
   display: inline-block;
 }
 
-#logoLink {
-  text-decoration: none;
+.footerLogo {
+  height: 80px;
+  width: 80px;
+}
+
+.stackLogo {
+  height: 80px;
+  width: 200px;
+}
+
+#footerLinks li {
+  display: inline;
+}
+
+#selectedNav {
+  color: var(--c2) !important;
 }
