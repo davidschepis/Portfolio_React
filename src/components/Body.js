@@ -2,6 +2,13 @@ import React, { useState } from 'react';
 import Project from "./Project";
 import { Modal } from "react-bootstrap";
 
+import pdf from "../images/pdf.svg";
+import docx from "../images/word.svg";
+import txt from "../images/txt.svg";
+
+import pdfLink from "../documents/resume.pdf";
+import wordLink from "../documents/resume.docx";
+import txtLink from "../documents/resume.txt";
 
 function Body(props) {
 
@@ -114,7 +121,44 @@ function Body(props) {
     else if (props.page === 'resume') {
         return (
             <section className="mainSection container">
-                <h1 className="sectionTitle">Resume</h1>
+                <div className="row">
+                    <div className="col text-center">
+                        <h1 className="sectionTitle" id="resumeHeader">Resume</h1>
+                        <div id="resumeText">
+                            <ul> <h3>Proficiencies</h3>
+                                <h5>Languages:</h5> <li>
+                                    Java, Javascript, ES6, HTML, CSS, C, SQL
+                                </li>
+                                <h5>Libraries:</h5><li>
+                                    jQuery, Bootstrap, Node.js, Express.js, React, Handlebars
+                                </li>
+                                <h5>Methodologies:</h5><li>
+                                    MVC, MERN, PWA, REST
+                                </li>
+                                <h5>Databases:</h5><li>
+                                    MongoDB, MySQL, MariaDB
+                                </li>
+                                <h5>Misc:</h5><li>
+                                    JSON, BASH, Unix/Linux
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="col text-center">
+                        <h1 className="sectionTitle">Download</h1>
+                        <div className="col">
+                            <a href={pdfLink} download>
+                                <img src={pdf} alt="PDF Logo" class="fileLogo" />
+                            </a>
+                            <a href={wordLink} download>
+                                <img src={docx} alt="Docx Logo" class="fileLogo" />
+                            </a>
+                            <a href={txtLink} download>
+                                <img src={txt} alt="Text Logo" class="fileLogo" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </section>
         )
     }

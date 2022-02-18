@@ -113,6 +113,8 @@ body{
   color: var(--c1);
   /* min-height: 700px; */
   border: solid var(--c1) 5px;
+  padding-bottom: 50px;
+  padding-left: 20px;
 }
 
 .bio {
@@ -191,4 +193,22 @@ body{
 
 .modalButton:hover {
   transform: scale(1.1);
+}
+
+.fileLogo {
+  height: 50px;
+  width: 50px;
+}
+
+#resumeText ul{
+  list-style-type: none;
+}
+
+#resumeText li {
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+#resumeHeader {
+  margin-bottom: 20px;
 }

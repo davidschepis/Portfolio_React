@@ -1,0 +1,82 @@
+﻿David Schepis 
+Tucson, AZ 85747        
+Phone: 520-344-4233| Email: DavidSchepis@gmail.com
+LinkedIn: https://www.linkedin.com/in/david-schepis-530790199/ 
+GitHub: https://github.com/davidschepis 
+Portfolio: https://davidschepis.github.io/Portfolio/
+
+
+Summary
+Programmer with experience in Full Stack Development, coming from a Computer Science background. Hard worker known for excellent problem solving capabilities. 
+
+
+Technical Skills
+Languages: Javascript, ES6, Java, SQL, HTML/CSS, JSON
+Applications/Software: Node.js, Express.js, jQuery, Bootstrap, React, MongoDB, Handlebars
+Methodologies: REST, MERN, MVC, PWA
+Projects
+Auto Parts Inventory 
+Github Repo: https://github.com/IanMordaunt/Auto-Parts-Inventory 
+Live Site: https://auto-parts-inventory-tracker.herokuapp.com/        
+* Full Stack application that allows a user full CRUD operations on an auto parts inventory database
+* Responsible for both front and back end
+* Front-end: Handlebars, Javascript 
+* Back-end: Node.js, Express.js, Sequelize, Javascript
+
+
+Weather Dashboard
+Github Repo: https://github.com/davidschepis/Weather_Dashboard
+Live Site: https://davidschepis.github.io/Weather_Dashboard/
+* Weather application that shows the forecast for any city, runs completely in the browser
+* Front-end: Javascript, HTML, CSS
+
+
+Note Taker App
+Github Repo: https://github.com/davidschepis/Note_Taker
+Live Site: https://note-taker-app-345.herokuapp.com/
+* Full Stack note taking application. Allows for creating notes which are saved in a local database
+* Front-end: Javascript 
+* Back-end: Node.js, Express.js, JSON
+
+
+Social Network API
+Github Repo: https://github.com/davidschepis/Social_Network_API
+* Backend for a social networking application
+* Utilizes Node.js, Express.js, Mongoose
+
+
+
+
+
+
+See portfolio for additional projects
+Experience
+Client Services                                                                           2019 – 2021
+Ascensus Government Savings                                                                 Tucson, AZ
+Email and phone support for employer facilitated retirement plans. Used communication skills along with numerous in-house technologies to assist employers and their employees with issues regarding their retirement programs.
+* Beginning November 2019, facilitated daily Excel reports regarding employer and employee contributions
+* After being promoted to onboarding in September 2020, worked directly with 115+ employers in CA and IL, helping them set up and facilitate retirement plans for their employees.
+
+
+Call Center Representative                                                                      2016-2017
+Citibank                                                                                     Tucson, AZ
+Customer service for Citi credit cards. Experience deescalating tense situations as well as keeping a positive work ethic during major business changes. 
+
+
+Inbound Sales Agent                                                                      2011-2013
+Afni. Inc                                                                                     Tucson, AZ 
+Sales/billing agent for Verizon products. Ensured customer satisfaction while also meeting sales goals.
+* Awarded We Care Representative of the month twice
+
+
+
+
+Education
+Bootcamp Certificate: University of Arizona, Tucson, AZ Will Graduate March 3rd 2022
+A 12-week intensive program focused on gaining technical programming skills in HTML5, CSS3, Javascript, JQuery, Bootstrap, Firebase, Node Js, MySQL, MongoDB, Express, Handelbars.js & ReactJS.
+Bachelor of Science, Computer Science: University of Arizona, Tucson, AZ
+Graduated May 2019
+
+
+Associate of Science: Pima Community College, Tucson, AZ
+Graduated May 2015
