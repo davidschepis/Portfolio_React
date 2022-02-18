@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Portfolio_React/static/css/main.8fd18c1b.css",
+    "main.js": "/Portfolio_React/static/js/main.3949b357.js",
+    "static/js/787.aeca62f9.chunk.js": "/Portfolio_React/static/js/787.aeca62f9.chunk.js",
+    "static/media/resume.docx": "/Portfolio_React/static/media/resume.04da22955286641c820d.docx",
+    "static/media/autoparts.png": "/Portfolio_React/static/media/autoparts.92761737f3d87a1ee97e.png",
+    "static/media/weather.png": "/Portfolio_React/static/media/weather.30f5082e995f91ceb95d.png",
+    "static/media/resume.pdf": "/Portfolio_React/static/media/resume.19b439bd161311b89fe0.pdf",
+    "static/media/techblog.png": "/Portfolio_React/static/media/techblog.3df4bd8b5029a398860f.png",
+    "static/media/stackoverflow.png": "/Portfolio_React/static/media/stackoverflow.e2c42001135addbad748.png",
+    "static/media/socialnetworkapi.png": "/Portfolio_React/static/media/socialnetworkapi.c5a46688578d8b2cb54a.png",
+    "static/media/notetaker.png": "/Portfolio_React/static/media/notetaker.a30f89f5df098a58b747.png",
+    "static/media/texteditor.png": "/Portfolio_React/static/media/texteditor.7ff6797f98f6567a341c.png",
+    "static/media/worker.png": "/Portfolio_React/static/media/worker.7345afb5d7aaebff1263.png",
+    "static/media/resume.txt": "/Portfolio_React/static/media/resume.1b2cd5cd5ade70ad2ba9.txt",
+    "static/media/txt.svg": "/Portfolio_React/static/media/txt.5fd038ec717554350ec5a762764ba738.svg",
+    "static/media/word.svg": "/Portfolio_React/static/media/word.387cf807673350c14091633a035f7a84.svg",
+    "index.html": "/Portfolio_React/index.html",
+    "static/media/pdf.svg": "/Portfolio_React/static/media/pdf.7455130d290ccdb4683065661f179739.svg",
+    "main.8fd18c1b.css.map": "/Portfolio_React/static/css/main.8fd18c1b.css.map",
+    "main.3949b357.js.map": "/Portfolio_React/static/js/main.3949b357.js.map",
+    "787.aeca62f9.chunk.js.map": "/Portfolio_React/static/js/787.aeca62f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8fd18c1b.css",
+    "static/js/main.3949b357.js"
+  ]
+}
