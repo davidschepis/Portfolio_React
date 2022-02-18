@@ -57,7 +57,8 @@ const p6 = {
 function Project(props) {
 
     const cardStyle = {
-        width: "24rem"
+        width: "24rem",
+        height: "200px",
     }
 
     if (props.project === 1) {

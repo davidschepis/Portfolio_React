@@ -103,16 +103,10 @@ body{
   border-right: solid var(--c3) 1px;
 }
 
-/* #resume a {
-  text-decoration: none;
-  color: inherit;
-} */
-
 .mainSection {
   margin-top: 100px;
   color: var(--c1);
-  /* min-height: 700px; */
-  border: solid var(--c1) 5px;
+  /* border: solid var(--c1) 5px; */
   padding-bottom: 50px;
   padding-left: 20px;
 }
@@ -196,8 +190,12 @@ body{
 }
 
 .fileLogo {
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  width: 100px;
+}
+
+.fileLogo:hover {
+  transform: scale(1.2);
 }
 
 #resumeText ul{

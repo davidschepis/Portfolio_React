@@ -10,6 +10,14 @@ import pdfLink from "../documents/resume.pdf";
 import wordLink from "../documents/resume.docx";
 import txtLink from "../documents/resume.txt";
 
+import worker from "../images/worker.png"
+
+const workerStyle = {
+    height: '150px',
+    width: '150px',
+    marginTop: '50px'
+};
+
 function Body(props) {
 
     const [title, setTitle] = useState("");
@@ -33,12 +41,58 @@ function Body(props) {
         setURL2(data.liveURL);
     };
 
+    const [textArea, setTextArea] = useState("");
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+
+    const handleText = (e) => {
+        setTextArea(e.target.value);
+    };
+
+    const handleName = (e) => {
+        setName(e.target.value);
+    };
+
+    const handleEmail = (e) => {
+        setEmail(e.target.value);
+    };
+
+    const showWarning = (num) => {
+        if (num === 1 && name === "") {
+            setWarning("Please enter your name to submit");
+        } else if (num === 2 && email === "") {
+            setWarning("Please enter your email address to submit");
+        } else if (num === 3 && textArea === "") {
+            setWarning("Please enter a message");
+        } else  {
+            setWarning("");
+        }
+    };
+
+    const [warning, setWarning] = useState("");
+
+    const checkForm = () => {
+        if (name !== "" && email !== "" && textArea !== "") {
+            setButtonDisplay("block");
+        }
+        else {
+            setButtonDisplay("none");
+        }
+    };
+
+    const [buttonDisplay, setButtonDisplay] = useState("none");
+
+    const buttonStyle = {
+        display: buttonDisplay
+    }
+
     if (props.page === 'aboutMe') {
         return (
             <section className="mainSection container">
                 <div className="row">
-                    <div className="col my-auto text-center">
+                    <div className="col text-center">
                         <h1 className="sectionTitle ">About Me</h1>
+                        <img src={worker} alt="Worker Image" style={workerStyle} />
                     </div>
                     <div className="col">
                         <p className="bio">
@@ -124,6 +178,13 @@ function Body(props) {
                 <div className="row">
                     <div className="col text-center">
                         <h1 className="sectionTitle" id="resumeHeader">Resume</h1>
+                    </div>
+                    <div className="col text-center">
+                        <h1 className="sectionTitle">Download</h1>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col text-center">
                         <div id="resumeText">
                             <ul> <h3>Proficiencies</h3>
                                 <h5>Languages:</h5> <li>
@@ -144,19 +205,16 @@ function Body(props) {
                             </ul>
                         </div>
                     </div>
-                    <div className="col text-center">
-                        <h1 className="sectionTitle">Download</h1>
-                        <div className="col">
-                            <a href={pdfLink} download>
-                                <img src={pdf} alt="PDF Logo" class="fileLogo" />
-                            </a>
-                            <a href={wordLink} download>
-                                <img src={docx} alt="Docx Logo" class="fileLogo" />
-                            </a>
-                            <a href={txtLink} download>
-                                <img src={txt} alt="Text Logo" class="fileLogo" />
-                            </a>
-                        </div>
+                    <div className="col text-center my-auto">
+                        <a href={pdfLink} download>
+                            <img src={pdf} alt="PDF Logo" className="fileLogo" />
+                        </a>
+                        <a href={wordLink} download>
+                            <img src={docx} alt="Docx Logo" className="fileLogo" />
+                        </a>
+                        <a href={txtLink} download>
+                            <img src={txt} alt="Text Logo" className="fileLogo" />
+                        </a>
                     </div>
                 </div>
             </section>
@@ -166,6 +224,22 @@ function Body(props) {
         return (
             <section className="mainSection container">
                 <h1 className="sectionTitle">Contact Me</h1>
+                <form>
+                    <div className="form-group">
+                        <label>Name:</label>
+                        <input type="text" className="form-control" value={name} onChange={handleName} placeholder="Enter Name" onBlur={() => showWarning(1)} onKeyUp={checkForm}></input>
+                    </div>
+                    <div className="form-group">
+                        <label>Email:</label>
+                        <input type="email" className="form-control" value={email} onChange={handleEmail} placeholder="Enter Email" onBlur={() => showWarning(2)} onKeyUp={checkForm}></input>
+                    </div>
+                    <div className="form-group">
+                        <label>Message:</label>
+                        <textarea className="w-100" value={textArea} onChange={handleText} onBlur={() => showWarning(3)} placeholder="Enter Message" onKeyUp={checkForm}></textarea>
+                    </div>
+                    <h1 id="warningText">{warning}</h1>
+                    <button type="submit" className="btn btn-primary" style={buttonStyle}>Submit</button>
+                </form>
             </section>
         )
     }
