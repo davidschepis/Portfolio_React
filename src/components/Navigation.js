@@ -17,7 +17,7 @@ function Navigation(props) {
             <div className="container-fluid">
                 <a href="index.html">
                     <img src={portfolio} alt="Portfolio Icon" style={imgStyle} />
-                    <p id="logoText">My Portfolio</p>
+                    <p id="logoText">David Schepis</p>
                 </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

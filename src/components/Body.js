@@ -70,6 +70,7 @@ function Body(props) {
     };
 
     const [warning, setWarning] = useState("");
+    const [emailWarning, setEmailWarning] = useState("");
 
     const checkForm = () => {
         if (name !== "" && email !== "" && textArea !== "") {
@@ -78,7 +79,20 @@ function Body(props) {
         else {
             setButtonDisplay("none");
         }
+        if (email !== "") {
+            if (!validateEmail(email)) {
+                setEmailWarning("Please enter a valid email address");
+            }
+            else {
+                setEmailWarning("");
+            }
+        }
     };
+
+    const validateEmail = (e) => {
+        const regex = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/;
+        return regex.test(e);
+    }
 
     const [buttonDisplay, setButtonDisplay] = useState("none");
 
@@ -238,6 +252,7 @@ function Body(props) {
                         <textarea className="w-100" value={textArea} onChange={handleText} onBlur={() => showWarning(3)} placeholder="Enter Message" onKeyUp={checkForm}></textarea>
                     </div>
                     <h1 id="warningText">{warning}</h1>
+                    <h1 id="warningText">{emailWarning}</h1>
                     <button type="submit" className="btn btn-primary" style={buttonStyle}>Submit</button>
                 </form>
             </section>
