@@ -5,11 +5,11 @@ import { Modal } from "react-bootstrap";
 
 function Body(props) {
 
-    const[title, setTitle] = useState("");
-    const[body, setBody] = useState("");
-    const[image, setImage] = useState("");
-    const[URL1, setURL1] = useState("");
-    const[URL2, setURL2] = useState("");
+    const [title, setTitle] = useState("");
+    const [body, setBody] = useState("");
+    const [image, setImage] = useState("");
+    const [URL1, setURL1] = useState("");
+    const [URL2, setURL2] = useState("");
 
     const [showModal, setModal] = useState(false);
 
@@ -67,22 +67,22 @@ function Body(props) {
                 </div>
                 <div className="row">
                     <div className="col">
-                        <Project project={1} showProjectModal={showProjectModal}/>
+                        <Project project={1} showProjectModal={showProjectModal} />
                     </div>
                     <div className="col">
-                        <Project project={2} showProjectModal={showProjectModal}/>
+                        <Project project={2} showProjectModal={showProjectModal} />
                     </div>
                     <div className="col">
-                        <Project project={3} showProjectModal={showProjectModal}/>
+                        <Project project={3} showProjectModal={showProjectModal} />
                     </div>
                     <div className="col">
-                        <Project project={4} showProjectModal={showProjectModal}/>
+                        <Project project={4} showProjectModal={showProjectModal} />
                     </div>
                     <div className="col">
-                        <Project project={5} showProjectModal={showProjectModal}/>
+                        <Project project={5} showProjectModal={showProjectModal} />
                     </div>
                     <div className="col">
-                        <Project project={6} showProjectModal={showProjectModal}/>
+                        <Project project={6} showProjectModal={showProjectModal} />
                     </div>
                 </div>
 
@@ -97,14 +97,16 @@ function Body(props) {
                                 </button>
                             </div>
                             <div className="modal-body text-center" id="modalBody">
-                            <img src={image} alt="Project Example"/>
-                            {body}
-                            <button type="button" className="btn m-1" onClick={() => window.open(URL1)}>Github</button>
-                            <button type="button" className="btn m-1" onClick={() => window.open(URL2)}>Live Page</button>
+                                <img src={image} alt="Project Example" />
+                                {body}
+                                <div>
+                                    <button type="button" className="btn m-1 modalButton" onClick={() => window.open(URL1)}>Github</button>
+                                    <button type="button" className="btn m-1 modalButton" onClick={() => window.open(URL2)}>Live Page</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                {/* </div> */}
+                    {/* </div> */}
                 </Modal>
             </section>
         )

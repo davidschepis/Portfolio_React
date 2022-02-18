@@ -127,13 +127,13 @@ body{
   font-weight: bold;
 } */
 
-/* .modal-content {
+.modal-content {
   background-color: var(--c2);
-} */
+}
 
-/* #modalTitle, #modalBody {
+#modalTitle, #modalBody {
   color: white;
-} */
+}
 
 .card {
   background-color: #334E58;
@@ -183,4 +183,12 @@ body{
 #modalBody img {
   width: 100%;
   height: auto;
+}
+
+.modalButton {
+  background-color: white;
+}
+
+.modalButton:hover {
+  transform: scale(1.1);
 }
