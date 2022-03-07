@@ -10,7 +10,9 @@ import pdfLink from "../documents/resume.pdf";
 import wordLink from "../documents/resume.docx";
 import txtLink from "../documents/resume.txt";
 
-import worker from "../images/worker.png"
+import worker from "../images/worker.png";
+
+import { send } from "emailjs-com";
 
 const workerStyle = {
     height: '150px',
@@ -92,13 +94,34 @@ function Body(props) {
     const validateEmail = (e) => {
         const regex = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/;
         return regex.test(e);
-    }
+    };
 
     const [buttonDisplay, setButtonDisplay] = useState("none");
 
     const buttonStyle = {
         display: buttonDisplay
-    }
+    };
+
+    const handleForm = (e) => {
+        e.preventDefault();
+        send(
+            "service_wuhya3h",
+            "template_pjc0suj",
+            {
+                from_name: email,
+                to_name: "davids.developer@outlook.com",
+                message: textArea,
+                reply_to: "David"
+            },
+            "FOJLys6bTtEVJKml2"
+        )
+        .then((response) => {
+            console.log("Email sent", response.status, response.text);
+        })
+        .catch((err) => {
+            console.log(err);
+        });
+    };
 
     if (props.page === 'aboutMe') {
         return (
@@ -253,7 +276,7 @@ function Body(props) {
                     </div>
                     <h1 id="warningText">{warning}</h1>
                     <h1 id="warningText">{emailWarning}</h1>
-                    <button type="submit" className="btn btn-primary" style={buttonStyle}>Submit</button>
+                    <button type="submit" className="btn btn-primary" style={buttonStyle} onClick={handleForm}>Submit</button>
                 </form>
             </section>
         )
