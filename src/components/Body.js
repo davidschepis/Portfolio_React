@@ -64,7 +64,7 @@ function Body(props) {
             setWarning("Please enter your email address to submit");
         } else if (num === 3 && textArea === "") {
             setWarning("Please enter a message");
-        } else  {
+        } else {
             setWarning("");
         }
     };
@@ -161,28 +161,28 @@ function Body(props) {
                     </div>
                 </div>
 
-                {/* <div className="modal" tabindex="-1" role="dialog" id="projectModal"> */}
-                <Modal size="xl" show={showModal} className="modal" tabIndex="-1" role="dialog" id="projectModal">
-                    <div className="modal-dialog modal-xl" role="document">
-                        <div className="modal-content">
-                            <div className="modal-header">
-                                <h5 className="modal-title" id="modalTitle">{title}</h5>
-                                <button type="button" className="close" aria-label="Close" onClick={() => closeProjectModal()}>
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div className="modal-body text-center" id="modalBody">
-                                <img src={image} alt="Project Example" />
-                                {body}
-                                <div>
-                                    <button type="button" className="btn m-1 modalButton" onClick={() => window.open(URL1)}>Github</button>
-                                    <button type="button" className="btn m-1 modalButton" onClick={() => window.open(URL2)}>Live Page</button>
+                <div onClick={closeProjectModal}>
+                    <Modal size="xl" onClick={e => e.stopPropagation()} show={showModal} className="modal" tabIndex="-1" role="dialog" id="projectModal">
+                        <div className="modal-dialog modal-xl" role="document">
+                            <div className="modal-content">
+                                <div className="modal-header">
+                                    <h5 className="modal-title" id="modalTitle">{title}</h5>
+                                    <button type="button" className="close" aria-label="Close" onClick={() => closeProjectModal()}>
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div className="modal-body text-center" id="modalBody">
+                                    <img src={image} alt="Project Example" />
+                                    {body}
+                                    <div>
+                                        <button type="button" className="btn m-1 modalButton" onClick={() => window.open(URL1)}>Github</button>
+                                        <button type="button" className="btn m-1 modalButton" onClick={() => window.open(URL2)}>Live Page</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    {/* </div> */}
-                </Modal>
+                    </Modal>
+                </div>
             </section>
         )
     }
