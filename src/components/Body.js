@@ -103,7 +103,6 @@ function Body(props) {
     };
 
     const handleForm = (e) => {
-        e.preventDefault();
         send(
             "service_wuhya3h",
             "template_pjc0suj",
@@ -115,12 +114,12 @@ function Body(props) {
             },
             "FOJLys6bTtEVJKml2"
         )
-        .then((response) => {
-            console.log("Email sent", response.status, response.text);
-        })
-        .catch((err) => {
-            console.log(err);
-        });
+            .then((response) => {
+                console.log("Email sent", response.status, response.text);
+            })
+            .catch((err) => {
+                console.log(err);
+            });
     };
 
     if (props.page === 'aboutMe') {
