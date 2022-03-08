@@ -37,7 +37,7 @@ function Body(props) {
 
     const closeSubmitModal = () => {
         setSubmitModal(false);
-        document.location.replace("/");
+        document.location.reload();
     };
 
     const showProjectModal = (data) => {
