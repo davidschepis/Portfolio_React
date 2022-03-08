@@ -17,7 +17,7 @@ Methodologies: REST, MERN, MVC, PWA
 Projects
 ToySRC 
 Github Repo: https://github.com/davidschepis/toy-src 
-Live Site: https://toy-src.herokuapp.com/        
+Live Site: https://toysrc.herokuapp.com/        
 * Full Stack MERN application where users can buy/trade toys with each other, includes a reputation system and allows for commenting on each others posts
 * Front-end: React.js
 * Back-end: Node.js, Express.js, Mongoose/MongoDB, GraphQL
