@@ -24,7 +24,7 @@ const p1 = {
     body: "Full-Stack MERN application that allows for trading/buying of toys, features a user reputation system and ability to comment on toy posts",
     image: toysrc,
     githubURL: "https://github.com/davidschepis/toy-src",
-    liveURL: "https://toy-src.herokuapp.com/"
+    liveURL: "https://toysrc.herokuapp.com/"
 }
 
 const p3 = {
