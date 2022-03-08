@@ -1,29 +1,29 @@
 {
   "files": {
     "main.css": "/Portfolio_React/static/css/main.8fd18c1b.css",
-    "main.js": "/Portfolio_React/static/js/main.e7ce9873.js",
+    "main.js": "/Portfolio_React/static/js/main.1254253e.js",
     "static/js/787.aeca62f9.chunk.js": "/Portfolio_React/static/js/787.aeca62f9.chunk.js",
     "static/media/toysrc.png": "/Portfolio_React/static/media/toysrc.cb20bfc4cfe8ada775e5.png",
     "static/media/booksearchengine2.png": "/Portfolio_React/static/media/booksearchengine2.c46f2636f76f470c7851.png",
-    "static/media/resume.docx": "/Portfolio_React/static/media/resume.aefb5c5e2f702b71cf99.docx",
+    "static/media/resume.docx": "/Portfolio_React/static/media/resume.840e14f7d150df72a6bc.docx",
     "static/media/autoparts.png": "/Portfolio_React/static/media/autoparts.92761737f3d87a1ee97e.png",
     "static/media/weather.png": "/Portfolio_React/static/media/weather.30f5082e995f91ceb95d.png",
-    "static/media/resume.pdf": "/Portfolio_React/static/media/resume.5c3b3326bca6ad939fe2.pdf",
+    "static/media/resume.pdf": "/Portfolio_React/static/media/resume.1c8efc4e8f3cc72656d6.pdf",
     "static/media/techblog.png": "/Portfolio_React/static/media/techblog.3df4bd8b5029a398860f.png",
     "static/media/stackoverflow.png": "/Portfolio_React/static/media/stackoverflow.e2c42001135addbad748.png",
     "static/media/texteditor.png": "/Portfolio_React/static/media/texteditor.7ff6797f98f6567a341c.png",
     "static/media/worker.png": "/Portfolio_React/static/media/worker.7345afb5d7aaebff1263.png",
-    "static/media/resume.txt": "/Portfolio_React/static/media/resume.a249a4098f33c7b7a807.txt",
+    "static/media/resume.txt": "/Portfolio_React/static/media/resume.ad72a851c7cb222247ab.txt",
     "static/media/txt.svg": "/Portfolio_React/static/media/txt.5fd038ec717554350ec5a762764ba738.svg",
     "static/media/word.svg": "/Portfolio_React/static/media/word.387cf807673350c14091633a035f7a84.svg",
     "index.html": "/Portfolio_React/index.html",
     "static/media/pdf.svg": "/Portfolio_React/static/media/pdf.7455130d290ccdb4683065661f179739.svg",
     "main.8fd18c1b.css.map": "/Portfolio_React/static/css/main.8fd18c1b.css.map",
-    "main.e7ce9873.js.map": "/Portfolio_React/static/js/main.e7ce9873.js.map",
+    "main.1254253e.js.map": "/Portfolio_React/static/js/main.1254253e.js.map",
     "787.aeca62f9.chunk.js.map": "/Portfolio_React/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8fd18c1b.css",
-    "static/js/main.e7ce9873.js"
+    "static/js/main.1254253e.js"
   ]
 }
