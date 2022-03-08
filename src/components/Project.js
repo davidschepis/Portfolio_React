@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import autoparts from "../images/autoparts.png";
 //import notetaker from "../images/notetaker.png";
 //import socialnetworkapi from "../images/socialnetworkapi.png";

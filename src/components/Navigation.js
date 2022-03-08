@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import portfolio from "../images/portfolio.png";
 
 const imgStyle = {
@@ -26,25 +26,25 @@ function Navigation(props) {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link" onClick={() => props.navigate("aboutMe")} style={aboutMeStyle}
+                            <a href="#!;" className="nav-link" onClick={() => props.navigate("aboutMe")} style={aboutMeStyle}
                                 id={props.page === "aboutMe" ?
                                     "selectedNav" : ""
                                 }>About Me</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" onClick={() => props.navigate("projects")}
+                            <a href="#!" className="nav-link" onClick={() => props.navigate("projects")}
                                 id={props.page === "projects" ?
                                     "selectedNav" : ""
                                 }>Projects</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" onClick={() => props.navigate("resume")}
+                            <a href="#!" className="nav-link" onClick={() => props.navigate("resume")}
                                 id={props.page === "resume" ?
                                     "selectedNav" : ""
                                 }>Resume</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" onClick={() => props.navigate("contactMe")}
+                            <a href="#!" className="nav-link" onClick={() => props.navigate("contactMe")}
                                 id={props.page === "contactMe" ?
                                     "selectedNav" : ""
                                 }>Contact Me</a>

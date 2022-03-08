@@ -29,9 +29,15 @@ function Body(props) {
     const [URL2, setURL2] = useState("");
 
     const [showModal, setModal] = useState(false);
+    const [showSubmitModal, setSubmitModal] = useState(false);
 
     const closeProjectModal = () => {
-        setModal(false)
+        setModal(false);
+    };
+
+    const closeSubmitModal = () => {
+        setSubmitModal(false);
+        document.location.replace("/");
     };
 
     const showProjectModal = (data) => {
@@ -103,6 +109,8 @@ function Body(props) {
     };
 
     const handleForm = (e) => {
+        e.preventDefault();
+        document.getElementById("contactMeSection").innerHTML = "<h1>SUBMITTING... PLEASE WAIT...</h1>";
         send(
             "service_wuhya3h",
             "template_pjc0suj",
@@ -116,6 +124,7 @@ function Body(props) {
         )
             .then((response) => {
                 console.log("Email sent", response.status, response.text);
+                setSubmitModal(true);
             })
             .catch((err) => {
                 console.log(err);
@@ -128,7 +137,7 @@ function Body(props) {
                 <div className="row">
                     <div className="col text-center">
                         <h1 className="sectionTitle ">About Me</h1>
-                        <img src={worker} alt="Worker Image" style={workerStyle} />
+                        <img src={worker} alt="person outline" style={workerStyle} />
                     </div>
                     <div className="col">
                         <p className="bio">
@@ -258,7 +267,7 @@ function Body(props) {
     }
     else if (props.page === 'contactMe') {
         return (
-            <section className="mainSection container">
+            <section className="mainSection container" id="contactMeSection">
                 <h1 className="sectionTitle">Contact Me</h1>
                 <form>
                     <div className="form-group">
@@ -277,6 +286,25 @@ function Body(props) {
                     <h1 id="warningText">{emailWarning}</h1>
                     <button type="submit" className="btn btn-primary" style={buttonStyle} onClick={handleForm}>Submit</button>
                 </form>
+                <div onClick={closeSubmitModal}>
+                    <Modal size="sm" onClick={e => e.stopPropagation()} show={showSubmitModal} className="modal" tabIndex="-1" role="dialog">
+                        <div className="modal-dialog modal-xl" role="document">
+                            <div className="modal-content">
+                                <div className="modal-header">
+                                    <h3 className="modal-title text-white">Success!</h3>
+                                    <button type="button" className="close" aria-label="Close" onClick={() => closeSubmitModal()}>
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div className="modal-body text-center text-white">
+                                    <h3>
+                                        Your response has been submitted! Please allow 24 hours for a response
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </Modal>
+                </div>
             </section>
         )
     }
