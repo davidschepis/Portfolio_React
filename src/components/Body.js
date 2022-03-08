@@ -75,7 +75,7 @@ function Body(props) {
     const [emailWarning, setEmailWarning] = useState("");
 
     const checkForm = () => {
-        if (name !== "" && email !== "" && textArea !== "") {
+        if (name !== "" && email !== "" && textArea !== "" && validateEmail(email)) {
             setButtonDisplay("block");
         }
         else {
